@@ -8,7 +8,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 
-import '../../test_values.dart';
+import '../../../test_values.dart';
 import 'today_apod_repository_impl_test.mocks.dart';
 
 @GenerateNiceMocks([MockSpec<TodayApodDataSource>(), MockSpec<NetworkInfo>()])
