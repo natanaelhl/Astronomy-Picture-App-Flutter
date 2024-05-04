@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_nasa_app/container_injection.dart';
+import 'package:flutter_nasa_app/presentation/pages/today_apod/today_apod_page.dart';
 
-void main() {
+void main() async{
+  await setupContainer();
   runApp(const AstronomyPicture());
 }
 
@@ -16,7 +19,7 @@ class AstronomyPicture extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: null,
+      home: const TodayApodPage(),
     );
   }
 }

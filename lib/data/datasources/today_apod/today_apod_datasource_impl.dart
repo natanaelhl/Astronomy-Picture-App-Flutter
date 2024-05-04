@@ -13,7 +13,7 @@ class TodayApodDataSourceImpl implements TodayApodDataSource {
   Future<ApodModel> fetchTodayApod() async{
     http.Response response;
     try {
-      response = await client.get(Uri.parse("uri"));
+      response = await client.get(Uri.parse("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY"));
     } catch (e) {
       throw ApiFailure();
     }
